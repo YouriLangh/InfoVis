@@ -1,8 +1,10 @@
 from dash import Dash, html
-from src.data.preprocess import load_and_preprocess_data
+from data.preprocess import load_and_preprocess_data
+from pathlib import Path
 
 def main() -> None:
-    filepath = 'data/Crime_Data_from_2010_to_2019.csv'
+    project_root = Path(__file__).parent.parent
+    filepath = project_root / 'data' / 'Crime_Data_from_2010_to_2019.csv'
     data = load_and_preprocess_data(filepath)
     app = Dash()
     app.title = "Crime Dashboard"
