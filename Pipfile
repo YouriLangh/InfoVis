@@ -9,6 +9,13 @@ pandas = "*"
 dash = "*"
 pathlib = "*"
 jupyter = "*"
+matplotlib = "*"
+seaborn = "*"
+cartopy = "*"
+plotly = "*"
+geopandas = "*"
+osmnx = "*"
+pyspark = "*"
 
 [dev-packages]
 
