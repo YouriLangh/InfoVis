@@ -16,6 +16,7 @@ plotly = "*"
 geopandas = "*"
 osmnx = "*"
 pyspark = "*"
+folium = "*"
 
 [dev-packages]
 
