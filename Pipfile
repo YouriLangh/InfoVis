@@ -17,6 +17,7 @@ geopandas = "*"
 osmnx = "*"
 pyspark = "*"
 folium = "*"
+ipywidgets = "*"
 
 [dev-packages]
 
