@@ -4,6 +4,8 @@ Before running the project, run **pipenv install** to update all dependencies fo
 After this use **pipenv shell** to open a virtual environment and run **python main.py** to activate the project.
 Alternatively you can use **pipenv run python main.py** to run a file in the virtual environment.
 
+None of the csv files are on github, first download both the 2010-2019 dataset and the 2020-present one. After doing this, you can run the notebook to create the preprocessed and combined dataset.
+
 # Installing and uninstalling packages
 Use **pipenv install "package-name"** or **pipenv uninstall "package-name"** to manage the packages.
 

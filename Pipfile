@@ -18,6 +18,8 @@ osmnx = "*"
 pyspark = "*"
 folium = "*"
 ipywidgets = "*"
+pip = "*"
+dash-bootstrap-components = "*"
 
 [dev-packages]
 
