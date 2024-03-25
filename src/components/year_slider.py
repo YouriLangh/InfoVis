@@ -37,7 +37,7 @@ def render(app: Dash, source: DataSource) -> html.Div:
                 min = int(min(source.unique_years)),
                 max = int(max(source.unique_years)),
                 step = 1,
-                value=2024,
+                value=2023,
                 marks= mark_dictionary,
                 
             ),

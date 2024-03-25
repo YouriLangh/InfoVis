@@ -6,6 +6,7 @@ from ..data.loader import DataSchema
 
 def render(app: Dash, source: DataSource) -> html.Div:
     unique_districts = source.get_unique_generic(column_name=DataSchema.AREA)
+    print(unique_districts)
     return html.Div(
         children=[
             html.H6("District"),

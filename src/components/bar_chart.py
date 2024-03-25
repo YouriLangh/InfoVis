@@ -13,7 +13,6 @@ def render(app:Dash, source: DataSource) -> html.Div:
     )
     def update_bar_chart(districts: list[str]) -> html.Div:
         filtered_source = source.filter(districts=districts)
-        print(districts)
 
         # Creating a dictionary to map category values to colors
         #color_map = {category: custom_colors[i % len(custom_colors)] for i, category in enumerate(df_plotly['Vict Descent'])}

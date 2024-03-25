@@ -6,16 +6,16 @@ def create_layout(app: Dash, source: DataSource) -> html.Div:
     return html.Div(
         className="app-div",
         children=[
-            html.H1(app.title),
-            html.Hr(),
+            html.Div(className="general-statistics-topbar", children=[html.H1(app.title),html.Hr()]),
             html.Div(
-                className="dropdown-container",
+                className="plotContainer",
                 children=[
-                    district_dropdown.render(app, source)
-                ]
-            ),
-             bar_chart.render(app, source),
-             monthly_trend_lineplot.render(app,source),
-             year_slider.render(app, source)
+                    html.Div(className="left-side", children=[monthly_trend_lineplot.render(app,source), year_slider.render(app, source)]),
+                    html.Div( className="right-side", children=[
+                        district_dropdown.render(app, source),
+                        bar_chart.render(app, source)]),
+                    # ])
+                    ]
+            ),       
         ]
     )

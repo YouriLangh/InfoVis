@@ -43,7 +43,7 @@ def parse_time_column(series):
 def load_combined_data(path: str) -> pd.DataFrame:
     chunk_size = 100000
     # Read CSV file in chunks
-    chunks = pd.read_csv(path, chunksize=chunk_size, dtype=dtype_dict)
+    chunks = pd.read_csv(path, chunksize=chunk_size, dtype=dtype_dict, engine='python')
     
     # Process each chunk and concatenate
     df_list = []

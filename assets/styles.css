@@ -1,0 +1,22 @@
+/* styles.css */
+
+.app-div {
+    display: grid;
+    grid-template-rows: 15% auto; /* 15% for the top bar, auto for the rest */
+    height: 100vh; /* Ensure the container fills the viewport height */
+  }
+  
+  .general-statistics-topbar {
+    background-color: #ccc; /* Example background color */
+  }
+  
+  .plotContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns taking 50% of the width each */
+  }
+  
+  .left-side, .right-side {
+    /* Styles for the left and right sides */
+    background-color: #664f4f;
+  }
+  
