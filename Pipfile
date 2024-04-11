@@ -20,6 +20,7 @@ folium = "*"
 ipywidgets = "*"
 pip = "*"
 dash-bootstrap-components = "*"
+pexpect = "~=4.9.0"
 
 [dev-packages]
 
