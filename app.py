@@ -4,8 +4,11 @@ from src.components.layout import create_layout
 from dash_bootstrap_components.themes import BOOTSTRAP
 from src.data.loader import load_combined_data
 from src.data.source import DataSource
+from src.data.fetch import fetch_datasets
+
 
 def main() -> None:
+    fetch_datasets()
     project_root = Path(__file__).parent
     filepath = project_root / 'data' / 'Crime_Data_20_Year_Analysis.csv'
     data = load_combined_data(filepath)
