@@ -14,6 +14,5 @@ def fetch_datasets():
         if path.exists(data_path / fn):
             print(f"Dataset {fn} already present")
         else:
-            fetch_dataset(data_path, fn, url)
             print(f"Downloading {fn}")
             urlretrieve(url, data_path / fn)
